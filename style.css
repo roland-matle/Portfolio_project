@@ -1,0 +1,81 @@
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+/*NAV*/
+
+.header {
+    background-color: chocolate;
+} 
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links {
+    color: rgba(255, 255, 255, 0.8); 
+    transition: all 0.5s;
+}
+
+.nav-links:hover,.nav-links:focus {
+    color: rgba(255, 255, 255, 1); 
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.nav-open {
+    transform: translate(0);
+}
+
+.hamburger-open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger-open .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
