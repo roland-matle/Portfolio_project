@@ -1,3 +1,5 @@
+// NAV
+
 const navElement = document.querySelector(".js-nav");
 const hamburgerElement = document.querySelector(".js-hamburger");
 
@@ -10,3 +12,4 @@ navElement.addEventListener("click", ()=>{
     navElement.classList.remove("nav-open");
     hamburgerElement.classList.remove("hamburger-open");
 });
+

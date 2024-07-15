@@ -11,7 +11,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
+    background-color: #3d3d3d;
+    color: white;
 }
 
 html {
@@ -21,14 +22,14 @@ html {
 /*NAV*/
 
 .header {
-    background-color: chocolate;
+    background-color: #222222;
 } 
 
 .header-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 15vh;
+    height: 8vh;
 }
 
 a {
@@ -37,16 +38,17 @@ a {
 
 .logo {
     color: white;
+    font-size: 1.5rem;
 }
 
 .nav {
-    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
 }
 
 .nav-list {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 1rem;  
 }
 
 .nav-links {
@@ -55,15 +57,13 @@ a {
 }
 
 .nav-links:hover,.nav-links:focus {
-    color: rgba(255, 255, 255, 1); 
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
 }
 
 .hamburger {
     display: none;
-}
-
-.bar {
-    transition: all 0.3s ease-in-out;
 }
 
 .nav.nav-open {
@@ -79,3 +79,64 @@ a {
 .hamburger-open .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
+
+/* SECTION */
+
+section {
+    height: 92vh;
+}
+
+/* HOME */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 5rem;
+}
+
+.pic-container {
+    display: flex;
+}
+
+.profile-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.section-text-p {
+    font-size: 1.7rem;
+    color: #D5D5D5;
+}
+
+.icon {
+    height: 2rem;
+}
+
+.btn-container {
+    
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: 1rem;
+    /* background: #47e5bc; */
+    background: #26c485;
+    border: #222222;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+    width: 8rem;
+}
+
